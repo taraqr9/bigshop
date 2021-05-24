@@ -1,3 +1,7 @@
+<?php 
+use App\Models\Category;
+?>
+
 <div class="navi">
     <div class="container">
         <div class="navy">
@@ -6,8 +10,37 @@
                 <li><a href="/">Home</a>
                 </li>
 
-                <li><a href="#">Category</a>
+                <li><a href="/category">Category</a>
                     <ul>
+                        @foreach (Category::all() as $item)
+                        <li><a href="#">{{ $item->category_name }}</a>
+                            <ul>
+                                <li><a href="#">{{ $item->id }}</a></li>
+                            </ul>
+                        </li>
+                        @endforeach
+                        <li><a href="#">Men's Fashion</a>
+                            <ul>
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Panjabi</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Accessories</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Women's Fashion</a>
+                            <ul>
+                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">Traditional Clothing</a></li>
+                                <li><a href="#">Bag</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Accessories</a></li>
+
+
+                            </ul>
+                        </li>
                         <li><a href="#">Laptop</a>
                             <ul>
                                 <li><a href="#">Vaio</a></li>
@@ -88,7 +121,7 @@
                     @else
                         <a href="#">{{ Auth::user()->name }}</a>
                         <ul>
-                            <li><a href="#"><span>{{ __('Profile') }}</span></a></li>
+                            <li><a href="/profile"><span>{{ __('Profile') }}</span></a></li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">

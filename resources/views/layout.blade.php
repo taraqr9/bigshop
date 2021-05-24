@@ -4,7 +4,7 @@
 
 
 <head>
-    <title>Home page | LookCare</title>
+    <title>Home page | BigShop</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,16 +69,36 @@
 </head>
 
 <body class="style-14 index-2">
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h1 class="loader">Loading...</h1>
+        </div>
+    </section>
+    
+    <header>
 
+        <!-- Header One Starts -->
+        <div class="header-1">
 
-    @yield('welcome')
+            @include('/home/_header')
+
+            @include('/home/_navigation')
+
+        </div>
+
+        <!-- Header one ends -->
+
+    </header>
+
+    @yield('content')
 
     @yield('login')
 
     @yield('register')
 
+    @yield('category')
 
-
+    
 
 
 
