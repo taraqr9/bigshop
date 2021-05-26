@@ -1,8 +1,34 @@
 @extends('layout')
 
-@section('content')
+@section('welcome')
     <!-- Start Loading -->
-    
+    <section class="loading-overlay">
+        <div class="Loading-Page">
+            <h1 class="loader">Loading...</h1>
+        </div>
+    </section>
+    <!-- End Loading  -->
+
+    <!-- start header -->
+    <header>
+
+        <!-- Header One Starts -->
+        <div class="header-1">
+
+            <!-- Container -->
+            @include('/home/_header')
+
+            <!-- Navigation starts -->
+
+            @include('/home/_navigation')
+
+            <!-- Navigation ends -->
+
+        </div>
+
+        <!-- Header one ends -->
+
+    </header>
     <!-- end header -->
 
     <!-- start main content -->

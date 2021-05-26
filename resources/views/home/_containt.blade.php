@@ -11,8 +11,8 @@
                                     <!-- SLIDE  -->
                                     <li data-link="#" data-target="_self" data-transition="flyin"
                                         data-slotamount="7" data-masterspeed="500" data-saveperformance="on">
-                                        <!-- MAIN IMAGE --><img src="https://i.pravatar.cc/1000?img=1" alt="slidebg1"
-                                            data-lazyload="https://i.pravatar.cc/1000?img=1" data-bgposition="left center"
+                                        <!-- MAIN IMAGE --><img src="img/dummy.png" alt="slidebg1"
+                                            data-lazyload="img/slide/slider1.png" data-bgposition="left center"
                                             data-kenburns="off" data-duration="14000" data-ease="Linear.easeNone"
                                             data-bgpositionend="right center" />
                                         <!-- LAYER NR. 1 -->
@@ -43,8 +43,8 @@
                                     </li>
                                     <li data-link="#" data-target="_self" data-transition="3dcurtain-horizontal"
                                         data-slotamount="7" data-masterspeed="500" data-saveperformance="on">
-                                        <!-- MAIN IMAGE --><img src="https://i.pravatar.cc/1000?img=2" alt="slidebg1"
-                                            data-lazyload="https://i.pravatar.cc/1000?img=2" data-bgposition="left center"
+                                        <!-- MAIN IMAGE --><img src="img/dummy.png" alt="slidebg1"
+                                            data-lazyload="img/slide/slider2.png" data-bgposition="left center"
                                             data-kenburns="off" data-duration="14000" data-ease="Linear.easeNone"
                                             data-bgpositionend="right center" />
                                         <!-- LAYER NR. 1 -->
@@ -74,8 +74,8 @@
                                     </li>
                                     <li data-transition="boxslide" data-slotamount="7" data-masterspeed="500"
                                         data-saveperformance="on">
-                                        <!-- MAIN IMAGE --><img src="https://i.pravatar.cc/1000?img=3" alt="slidebg1"
-                                            data-lazyload="https://i.pravatar.cc/1000?img=3" data-bgposition="left center"
+                                        <!-- MAIN IMAGE --><img src="img/dummy.png" alt="slidebg1"
+                                            data-lazyload="img/slide/slide_3.jpg" data-bgposition="left center"
                                             data-kenburns="off" data-duration="14000" data-ease="Linear.easeNone"
                                             data-bgpositionend="right center" />
                                         <!-- LAYER NR. 1 -->
