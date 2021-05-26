@@ -1,5 +1,6 @@
 <?php 
 use App\Models\Category;
+use App\Models\SubCategory;
 ?>
 
 <div class="navi">
@@ -13,13 +14,22 @@ use App\Models\Category;
                 <li><a href="/category">Category</a>
                     <ul>
                         @foreach (Category::all() as $item)
-                        <li><a href="#">{{ $item->category_name }}</a>
+                        <li>
+                            <a href="{{ route('product._subcategory',['subcategory'=>$item])}} ">
+                                {{ $item->category_name }}
+                            </a>
                             <ul>
-                                <li><a href="#">{{ $item->id }}</a></li>
+                                
+                                @foreach (Category::find($item->id)->subCategory  as $subCate)
+                                <li>
+                                    <a href="{{ route('product._products',['product'=>$item])}}">{{ $subCate->subcategory_name }}</a>
+                                </li>
+                                @endforeach
                             </ul>
                         </li>
                         @endforeach
-                        <li><a href="#">Men's Fashion</a>
+
+                        {{-- <li><a href="#">Men's Fashion</a>
                             <ul>
                                 <li><a href="#">T-shirt</a></li>
                                 <li><a href="#">Panjabi</a></li>
@@ -91,7 +101,7 @@ use App\Models\Category;
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
 
@@ -102,8 +112,6 @@ use App\Models\Category;
                         <li><a href="shopping-cart.html"><span>Cart</span></a></li>
                         <li><a href="checkout.html"><span>Checkout</span></a></li>
                         <li><a href="wishlist.html"><span>Wishlist</span></a></li>
-                        <li><a href="signin.html"><span>Sign In</span></a></li>
-                        <li><a href="signup.html"><span>Sign Up</span></a></li>
                         <li><a href="404.html"><span>404 Page</span></a></li>
                     </ul>
                 </li>

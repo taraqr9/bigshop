@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('product_name');
             $table->string('product_description');
             $table->bigInteger('category_id')->unsigned();
-            $table->bigInteger('subcategory_id')->unsigned();
+            $table->bigInteger('sub_category_id')->unsigned();
             $table->integer('quantity');
             $table->bigInteger('price');
             $table->string('size')->nullable();
@@ -31,7 +31,7 @@ class CreateProductsTable extends Migration
             ->references('id')
             ->on('categories');
             
-            $table->foreign('subcategory_id')
+            $table->foreign('sub_category_id')
             ->references('id')
             ->on('sub_categories');
         });
