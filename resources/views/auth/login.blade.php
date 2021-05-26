@@ -5,19 +5,6 @@
 
 <header>
 
-	<!-- Header One Starts -->
-	<div class="header-1">
-
-		<!-- Container -->
-		@include('/home._header'))
-
-		<!-- Navigation starts -->
-
-		@include('/home._navigation')
-
-		<!-- Navigation ends -->
-
-	</div>
 
     <main class="container">
 

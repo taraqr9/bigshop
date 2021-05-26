@@ -1,3 +1,8 @@
+<?php 
+use App\Models\Category;
+use App\Models\SubCategory;
+?>
+
 <div class="navi">
     <div class="container">
         <div class="navy">
@@ -6,8 +11,46 @@
                 <li><a href="/">Home</a>
                 </li>
 
-                <li><a href="#">Category</a>
+                <li><a href="/category">Category</a>
                     <ul>
+                        @foreach (Category::all() as $item)
+                        <li>
+                            <a href="{{ route('product._subcategory',['subcategory'=>$item])}} ">
+                                {{ $item->category_name }}
+                            </a>
+                            <ul>
+                                
+                                @foreach (Category::find($item->id)->subCategory  as $subCate)
+                                <li>
+                                    <a href="{{ route('product._products',['product'=>$item])}}">{{ $subCate->subcategory_name }}</a>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </li>
+                        @endforeach
+
+                        {{-- <li><a href="#">Men's Fashion</a>
+                            <ul>
+                                <li><a href="#">T-shirt</a></li>
+                                <li><a href="#">Panjabi</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Accessories</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Women's Fashion</a>
+                            <ul>
+                                <li><a href="#">Saree</a></li>
+                                <li><a href="#">Traditional Clothing</a></li>
+                                <li><a href="#">Bag</a></li>
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Accessories</a></li>
+
+
+                            </ul>
+                        </li>
                         <li><a href="#">Laptop</a>
                             <ul>
                                 <li><a href="#">Vaio</a></li>
@@ -58,7 +101,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
 
@@ -69,8 +112,6 @@
                         <li><a href="shopping-cart.html"><span>Cart</span></a></li>
                         <li><a href="checkout.html"><span>Checkout</span></a></li>
                         <li><a href="wishlist.html"><span>Wishlist</span></a></li>
-                        <li><a href="signin.html"><span>Sign In</span></a></li>
-                        <li><a href="signup.html"><span>Sign Up</span></a></li>
                         <li><a href="404.html"><span>404 Page</span></a></li>
                     </ul>
                 </li>
@@ -88,7 +129,7 @@
                     @else
                         <a href="#">{{ Auth::user()->name }}</a>
                         <ul>
-                            <li><a href="#"><span>{{ __('Profile') }}</span></a></li>
+                            <li><a href="/profile"><span>{{ __('Profile') }}</span></a></li>
                             <li>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
