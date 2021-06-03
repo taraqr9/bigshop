@@ -6,17 +6,6 @@
 
 <head>
 
-	
-
-
-
-
-
-
-
-
-
-
     <title>Home page | BigShop</title>
 
     <meta charset="utf-8">
@@ -24,8 +13,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="jquery.rateyo.css"/>
     <!-- Fav icon -->
     <link rel="shortcut icon" href="/img/favicon.ico">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
 
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,900,700,700italic,300' rel='stylesheet'
@@ -56,23 +51,12 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" type="text/css" href="/css/revolutionslider_settings.css" media="screen" />
-
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,900,700,700italic,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/bootstrap-override.css">
-	<link rel="stylesheet" href="/css/skin-lblue.css">
-
-	<link rel="stylesheet" href="/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/css/normalize.css">
-	<link rel="stylesheet" href="/css/owl.carousel.css">
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="/css/responsive.css">
 	<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -111,7 +95,84 @@
 
 
 
+<!-- start footer area -->
+<footer class="footer-area-content">
 
+	<div class="container">
+		<div class="footer-wrapper style-3">
+			<div class="type-1">
+				<div class="footer-columns-entry">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="text-white">BIG SHOP</h3>
+							<div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod.</div>
+							<div class="footer-address">30 South Avenue San Francisco<br> Phone: +123 123 123 123<br>
+								Email: <a href="mailto:Support@demo.com">Support@demo.com</a><br>
+								<a target="_blank" href="http://iglyphic.com/"><b>www.bigshop.com</b></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<h3 class="column-title">Customer Care</h3>
+							<ul class="column">
+								<li><a href="#">Terms & Condition</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Shipping Charge</a></li>
+								<li><a href="#">Shipping Track</a></li>
+								<li><a href="#">Payment Method</a></li>
+								<li><a href="#">Order History</a></li>
+								<li><a href="#">Returns</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<h3 class="column-title">Your Account</h3>
+							<ul class="column">
+								<li><a href="#">My Account</a></li>
+								<li><a href="#">Wishlist</a></li>
+								<li><a href="#">Affiliate Dashboard</a></li>
+								<li><a href="#">Billing Address</a></li>
+								<li><a href="#">Cancel Order</a></li>
+								<li><a href="#">Order History</a></li>
+								<li><a href="#">Returns</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<h3 class="column-title">Shop Information</h3>
+							<ul class="column">
+								<li><a href="#">About Company</a></li>
+								<li><a href="#">Become Member</a></li>
+								<li><a href="#">License Details</a></li>
+								<li><a href="#">Custom Service</a></li>
+								<li><a href="#">Tax Information</a></li>
+								<li><a href="#">Order History</a></li>
+								<li><a href="#">Job & Vacancies</a></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="clearfix visible-sm-block"></div>
+						<div class="col-md-3">
+							<h3 class="column-title">Company working hours</h3>
+							<div class="footer-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod.</div>
+							<div class="footer-description">
+								<b>Monday-Friday:</b> 8.30 a.m. - 5.30 p.m.<br>
+								<b>Saturday:</b> 9.00 a.m. - 2.00 p.m.<br>
+								<b>Sunday:</b> Closed
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</footer>
+<!-- footer area end -->
 
 
     <script src="http://unpkg.com/turbolinks"></script>
@@ -332,7 +393,7 @@
 
 	/*-----------------------------------------------------------------------------------*/
 	/*	Tabs Widget
-	 /*-----------------------------------------------------------------------------------*/
+	/*-----------------------------------------------------------------------------------*/
 	$('.footer .tabbed .tabs li:first-child, .tabbed .tabs li:first-child').addClass('current');
 	$('.footer .block:first, .tabbed .block:first').addClass('current');
 
@@ -354,8 +415,8 @@
 
 	/*-----------------------------------------------------------------------------------*/
 	/*	Image Lightbox
-	 /*  http://osvaldas.info/image-lightbox-responsive-touch-friendly
-	 /*-----------------------------------------------------------------------------------*/
+	/*  http://osvaldas.info/image-lightbox-responsive-touch-friendly
+	/*-----------------------------------------------------------------------------------*/
 	if (jQuery().imageLightbox) {
 
 		// ACTIVITY INDICATOR
@@ -468,9 +529,21 @@
 
 	}
 
-
-
 </script>
+
+	
+	<!-- Rating -->
+	{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+	
+	<!-- NOTE getting value for database upload -->
+	<script>
+		$(function() {
+			$(".rateyo").rateYo({
+				starWidth: "20px"
+			});
+		});
+	</script>
 </body>
 
 

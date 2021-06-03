@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Products;
 use App\Models\SubCategory;
+use Illuminate\Database\Query\Builder;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -18,7 +19,14 @@ class ProductsController extends Controller
     {
         return view('product._single_product',
     [
-        'product_details' => Products::find($id)
+        'product_details' => Products::fullDetails()->find($id)
     ]);
     }
+
+    public function buyNow($id)
+    {
+        return view('product._checkout',
+        ['product'=> Products::fullDetails()->find($id)]);
+    }
+
 }
