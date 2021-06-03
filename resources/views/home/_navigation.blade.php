@@ -130,6 +130,11 @@ use App\Models\SubCategory;
                         <a href="#">{{ Auth::user()->name }}</a>
                         <ul>
                             <li><a href="/profile"><span>{{ __('Profile') }}</span></a></li>
+
+                            <li><a href="/cart"><span>{{ __('Cart') }}</span></a></li>
+
+                            <li><a href="/order"><span>{{ __('Order') }}</span></a></li>
+
                             <li>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
