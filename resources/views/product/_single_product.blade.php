@@ -31,8 +31,14 @@
 
                                             <a href="/img/temp-images/hoodie_7_front.jpg" data-imagelightbox="gallery"
                                                 class="hoodie_7_front">
+                                                @if (file_exists("
+                                                    /img/shop/{{ $product_details->image }}"))
+                                                    {{ $product_details->image }}
+                                                @else
                                                 <img src="/img/temp-images/hoodie_7_front-470x470.jpg"
-                                                    class="attachment-shop_single" alt="image">
+                                                class="attachment-shop_single" alt="image">
+                                                @endif
+                                                
                                             </a>
                                             </li>
 
@@ -66,19 +72,20 @@
                                     <p>{{ $product_details->product_description }}</p>
 
 
-                                        <form action="{{ route('addtocart',[$product_details->id])}}" method="POST">
+                                    <form action="{{ route('addtocart', [$product_details->id]) }}" method="POST">
                                         @csrf
                                         <div class="quantity">
                                             <input type="number" step="1" name="quantity" value="1" title="Qty"
                                                 class="input-text qty text" size="4" min="1" style="width:30px;">
                                         </div>
-                                        
-                                        <button type="submit" name="cartOrBuy" value="add_to_cart" class="btn btn-outline-primary mt-3">
+
+                                        <button type="submit" name="cartOrBuy" value="add_to_cart"
+                                            class="btn btn-outline-primary mt-3">
                                             Add to cart
                                         </button>
-                                        
+
                                     </form>
-                                    <a href="/buynow/{{$product_details->id}}" class="btn btn-outline-success mt-3">
+                                    <a href="/buynow/{{ $product_details->id }}" class="btn btn-outline-success mt-3">
                                         Buy Now
                                     </a>
 

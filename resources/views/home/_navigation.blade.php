@@ -105,17 +105,6 @@ use App\Models\SubCategory;
                     </ul>
                 </li>
 
-                <li><a href="#">Pages</a>
-                    <ul>
-                        <li><a href="shop.html"><span>Shop</span></a></li>
-                        <li><a href="single-product.html"><span>Single product</span></a></li>
-                        <li><a href="shopping-cart.html"><span>Cart</span></a></li>
-                        <li><a href="checkout.html"><span>Checkout</span></a></li>
-                        <li><a href="wishlist.html"><span>Wishlist</span></a></li>
-                        <li><a href="404.html"><span>404 Page</span></a></li>
-                    </ul>
-                </li>
-
 
 
                 <li>
@@ -149,8 +138,7 @@ use App\Models\SubCategory;
                 </li>
 
 
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/aboutus">About Us</a></li>
             </ul>
         </div>
     </div>

@@ -30,6 +30,7 @@ class ProductsFactory extends Factory
             'sub_category_id'=>SubCategory::all()->random()->id,
             'quantity'=>$this->faker->randomDigit(),
             'price'=>$this->faker->randomNumber(),
+            'image'=>$this->faker->lexify('??????'),
             'size'=>$this->faker->randomElement($array = array ('S','M','L','XL','XXL')),
             'discount'=>$this->faker->numerify($string='##'),
         ];

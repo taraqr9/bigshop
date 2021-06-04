@@ -50,9 +50,17 @@
                                                     <td>{{ $item->id }}</td>
                                                     <!-- Product image -->
                                                     <td>
+                                                        @if (file_exists("
+                                                            /img/shop/{{ Products::find($item->products_id)->image }}"))
+                                                            <a href="#">
+                                                                <img src="img/small/{{ Products::find($item->products_id)->image }}" alt="" class="img-responsive" />
+                                                            </a>
+                                                        @else
                                                         <a href="#">
                                                             <img src="img/small/50.jpg" alt="" class="img-responsive" />
                                                         </a>
+                                                        @endif
+                                                        
                                                     </td>
                                                     <td>
                                                         <a href="/product/{{ $item->products_id }}">
@@ -64,12 +72,13 @@
                                                     <td>
                                                         <div class="btn-group btn-group-xs">
                                                             <button class="btn btn-sm btn-default">
-                                                                <form action="/removeFromCart/{{ $item->id }}" method="POST">
+                                                                <form action="/removeFromCart/{{ $item->id }}"
+                                                                    method="POST">
                                                                     @csrf
-                                                                    <button type='submit'
-                                                                        class="btn btn-sm btn-red"><i class="fa fa-trash-o"></i>
+                                                                    <button type='submit' class="btn btn-sm btn-red"><i
+                                                                            class="fa fa-trash-o"></i>
                                                                         {{ $item->id }}
-                                                                    </=>
+                                                                        </=>
                                                                 </form>
                                                         </div>
                                                     </td>

@@ -23,6 +23,7 @@ class CreateProductsTable extends Migration
             $table->bigInteger('sub_category_id')->unsigned();
             $table->integer('quantity');
             $table->bigInteger('price');
+            $table->string('image');
             $table->string('size')->nullable();
             $table->integer('discount');
             $table->timestamps();
