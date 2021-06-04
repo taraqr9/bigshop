@@ -4,6 +4,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SubCategoryController;
 use App\Models\Cart;
 use App\Models\Category;
@@ -28,16 +29,20 @@ Route::middleware('auth')->group(function(){
 
     Route::get('/order', [OrderController::class,'order']);
 
-    Route::post('/addtocart/{id}',[User::class,'addToCart'])->name('addtocart');
+    Route::post('/addtocart/{id}',[CartController::class,'addToCart'])->name('addtocart');
 
     Route::get('/buynow/{id}',[ProductsController::class,'buyNow']);
 
     Route::post('/buynow/{id}',[User::class,'buyNow']);
 
-    Route::post('/checkoutall',[User::class,'checkOutAll']);
+    Route::post('/checkoutall',[CartController::class,'checkOutAll']);
 
     Route::post('/removeFromCart/{id}',[CartController::class,'removeItem']);
-    
+
+    Route::post('/add_review/{id}',[ReviewController::class,'addReview']);
+
+    Route::post('/profile/edit',[User::class,'profileUpdate']);
+
 });
 
 
@@ -55,3 +60,6 @@ Route::get('/products/{product:id}/buynow',function()
 
 Route::get('/product/{single_product:id}',[ProductsController::class,'singleProduct'])->name('product._single_product');
 
+Route::get('/aboutus',function(){
+    return view('about');
+});

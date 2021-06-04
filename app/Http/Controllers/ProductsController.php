@@ -29,4 +29,6 @@ class ProductsController extends Controller
         ['product'=> Products::fullDetails()->find($id)]);
     }
 
+    
+
 }

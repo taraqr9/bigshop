@@ -7,6 +7,7 @@
             @foreach ($category as $item)
             <div class="col-xs-12 col-sm-6 col-md-3 product-item filter-best">
                 <div class="product-img">
+                    
                     <img src="img/shop/index2_product1.png" alt="product">
                     <div class="product-hover">
                         <div class="product-cart">

@@ -36,9 +36,16 @@
                                                     <td>{{ $item->id }}</td>
                                                     <!-- Product image -->
                                                     <td>
+                                                        @if (file_exists("
+                                                            /img/shop/{{ Products::find($item->products_id)->image }}"))
+                                                            <a href="#">
+                                                                <img src="img/small/{{ Products::find($item->products_id)->image }}" alt="" class="img-responsive" />
+                                                            </a>
+                                                        @else
                                                         <a href="#">
                                                             <img src="img/small/50.jpg" alt="" class="img-responsive" />
                                                         </a>
+                                                        @endif
                                                     </td>
                                                     <td>
                                                         <a href="/product/{{ $item->products_id }}">
