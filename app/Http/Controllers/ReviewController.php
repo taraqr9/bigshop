@@ -8,8 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class ReviewController extends Controller
 {
-    //
-
     public function addReview(Request $request, $id)
     {
         Review::updateOrCreate(
