@@ -29,6 +29,8 @@ Route::middleware('auth')->group(function(){
 
     Route::get('/order', [OrderController::class,'order']);
 
+    Route::get('/downlaod',[OrderController::class,'downloadOrderList']);
+
     Route::post('/addtocart/{id}',[CartController::class,'addToCart'])->name('addtocart');
 
     Route::get('/buynow/{id}',[ProductsController::class,'buyNow']);

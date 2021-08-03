@@ -93,8 +93,6 @@
     @yield('category')
 
 
-
-
 <!-- start footer area -->
 <footer class="footer-area-content">
 
