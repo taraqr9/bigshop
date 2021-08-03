@@ -9,11 +9,12 @@ Then give the command into the command line ->
 ```bash
 php artisan db:seed
 ```
-![Uploading scrnli_04_08_2021_03-07-36.png…]()
+![scrnli_04_08_2021_03-07-36](https://user-images.githubusercontent.com/37486791/128087357-d5c31f0b-273d-4722-ad00-5459fcce06e5.png)
 ![Screenshot (689)](https://user-images.githubusercontent.com/37486791/128086970-16845d2d-a0d7-4f3c-ae04-ea48d6bca64d.png)
 ![scrnli_04_08_2021_03-08-10](https://user-images.githubusercontent.com/37486791/128086974-d19ef5fe-8e5b-4fd0-8292-d9791826962e.png)
 ![scrnli_04_08_2021_03-10-13](https://user-images.githubusercontent.com/37486791/128086980-69669be2-ce60-4bc9-86b1-067d1ec51fe6.png)
-![Uploading scrnli_04_08_2021_03-09-50.png…]()
+![scrnli_04_08_2021_03-10-13](https://user-images.githubusercontent.com/37486791/128087387-fe7b842b-a79d-49e0-b645-09bc8d86bdd7.png)
+
 
 
 
