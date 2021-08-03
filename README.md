@@ -12,22 +12,6 @@ php artisan db:seed
 
 
 ## Getting Started
-After the clone project first give a command on the console ->
-```bash
-composer dump-autoload 
-```
-
-
-Then give the command ->
-```bash
-php artisan migrate
-php artisan db:seed
-```
-
-
-
-
-
 
 To get started  you can simply clone this `bigdata` repository.
 
@@ -38,9 +22,16 @@ https://github.com/taraqr9/bigshop.git
 cd bigshop
 ```
 
-Update composer with this command:
+After the clone project first give a command on the console ->
 ```bash
-composer update
+composer update 
+```
+
+
+Then give the command ->
+```bash
+php artisan migrate
+php artisan db:seed
 ```
 
 
