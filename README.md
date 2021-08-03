@@ -9,6 +9,9 @@ Then give the command into the command line ->
 ```bash
 php artisan db:seed
 ```
+![scrnli_02_08_2021_22-59-52](https://user-images.githubusercontent.com/37486791/128086087-2d059bf6-1828-489d-84eb-434060f0b1f2.png)
+![scrnli_02_08_2021_23-05-40](https://user-images.githubusercontent.com/37486791/128086096-e9cc3b8a-58a1-42a8-aa47-7d3f9c5123c9.png)
+![Uploading scrnli_04_08_2021_03-04-55.png…]()
 
 
 ## Getting Started
