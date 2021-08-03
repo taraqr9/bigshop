@@ -6,16 +6,24 @@ This is a sample application that demonstrates an E-commerce website using Larav
 
 ## Import Data
 Then give the command into the command line ->
+```bash
 php artisan db:seed
+```
 
 
 ## Getting Started
 After the clone project first give a command on the console ->
+```bash
 composer dump-autoload 
+```
+
 
 Then give the command ->
+```bash
 php artisan migrate
 php artisan db:seed
+```
+
 
 
 
