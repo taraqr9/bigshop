@@ -18,7 +18,7 @@ To get started  you can simply clone this `bigdata` repository.
 Clone the `bigdata` repository using git:
 
 ```bash
-https://github.com/taraqr9/bigshop.git
+clone https://github.com/taraqr9/bigshop.git
 cd bigshop
 ```
 
