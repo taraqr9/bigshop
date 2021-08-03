@@ -14,6 +14,7 @@ After the clone project first give a command on the console ->
 composer dump-autoload 
 
 Then give the command ->
+php artisan migrate
 php artisan db:seed
 
 
